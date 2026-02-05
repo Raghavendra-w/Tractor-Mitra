@@ -137,3 +137,19 @@ If you want, I can also:
 - Write a **short GitHub description**
 - Add **badges** (Flutter, Dart, License)
 - Review your repo like a recruiter would 🚀
+
+## 📸 Screenshots
+
+### 👨‍🌾 Farmer Module
+![Farmer Dashboard](screenshots/farmer_dashboard.png)
+![Tractor List](screenshots/tractor_list.png)
+![Add Tractor](screenshots/add_tractor.png)
+![Booking](screenshots/booking.png)
+
+### 🏭 Owner Module
+![Owner Login](screenshots/owner_login_screen.png)
+![Owner Dashboard](screenshots/owner_dashboard.png)
+![Owner Account](screenshots/owner_account_screen.png)
+
+### 📱 Common Screens
+![App Dashboard](screenshots/app_dashboard.png)
