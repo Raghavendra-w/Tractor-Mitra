@@ -1,104 +1,139 @@
 # Tractor Mitra 🚜
 
-A Flutter application for connecting farmers with tractor owners - book tractors for farming needs.
+Tractor Mitra is a farmer-focused application built with Flutter that connects farmers with tractor owners for easy and reliable tractor booking. The platform simplifies tractor management, booking, and reviews while supporting modern digital agriculture workflows in India.
 
-## Features
+---
 
-- 👨‍🌾 **Farmer Dashboard**: Browse and book available tractors
-- 🏭 **Owner Dashboard**: Manage tractors and bookings
-- ⭐ **Reviews & Ratings**: Rate and review tractors
-- 📸 **Image Upload**: Add tractor images
-- 💳 **Payment Integration**: Razorpay integration ready
-- 🌐 **Multi-platform**: Web, Android, iOS support
-- 🚀 **Pure Dart Backend**: No Python/Django required!
+## 🌟 Features
 
-## Project Structure
+- 👨‍🌾 **Farmer Dashboard** – Browse and book available tractors
+- 🏭 **Owner Dashboard** – Add tractors and manage bookings
+- ⭐ **Reviews & Ratings** – Rate and review tractors
+- 📸 **Image Upload** – Upload tractor images
+- 💳 **Payment Integration** – Razorpay integration ready
+- 🌐 **Multi-platform Support** – Android, iOS, and Web
+- 🚀 **Pure Dart Backend** – No Python or Django required
 
-```
+---
+
+## 🏗️ Project Structure
+
+.....
 tractor_mitra/
-├── lib/                    # Flutter app source code
-│   ├── screens/           # App screens
-│   ├── services/          # API service layer
-│   ├── widgets/           # Reusable widgets
-│   ├── models/            # Data models
-│   └── backend/           # Pure Dart backend server
-│       ├── models/        # Backend data models
-│       ├── database/      # SQLite database service
-│       ├── handlers/      # API route handlers
-│       └── server.dart    # Server configuration
-├── bin/                   # Backend startup scripts
-└── assets/                # Images and assets
-```
+├── lib/ # Flutter application source
+│ ├── screens/ # UI screens
+│ ├── services/ # API & networking
+│ ├── widgets/ # Reusable widgets
+│ ├── models/ # App data models
+│ └── backend/ # Pure Dart backend server
+│ ├── models/ # Backend models
+│ ├── database/ # SQLite database service
+│ ├── handlers/ # API handlers
+│ └── server.dart # Server configuration
+├── bin/ # Backend startup scripts
+├── assets/ # Images and static assets
+└── tractor_backend/ # Django backend (legacy / optional)
 
-## Setup Instructions
 
-### Backend Setup (Pure Dart)
+---
 
-The backend is now written entirely in Dart! No Python or Django needed.
+## ⚙️ Setup Instructions
 
-1. **Install dependencies:**
+### 🔹 Backend Setup (Pure Dart)
+
+The backend is written entirely in **Dart**, making the project lightweight and easy to maintain.
+
+1. Install dependencies:
    ```bash
    flutter pub get
-   ```
 
-2. **Start the backend server:**
-   ```bash
-   # Option 1: Using Dart
-   dart run bin/start_backend.dart
-   
-   # Option 2: Direct run
-   dart lib/backend/main_server.dart
-   ```
+# Option 1
+dart run bin/start_backend.dart
 
-   Backend will be available at: `http://127.0.0.1:8000/api/`
+# Option 2
+dart lib/backend/main_server.dart
 
-### Flutter App Setup
+http://127.0.0.1:8000/api/
 
-1. **Install Flutter dependencies:**
-   ```bash
-   flutter pub get
-   ```
+🔹 Flutter App Setup
 
-2. **Run the app:**
-   ```bash
-   # Web
-   flutter run -d chrome
-   
-   # Android
-   flutter run
-   
-   # iOS
-   flutter run
-   ```
+Get dependencies:
 
-## Backend API Endpoints
+flutter pub get
 
-- `GET /api/tractors/` - List available tractors
-- `POST /api/tractors/add/` - Add new tractor
-- `GET /api/bookings/` - List all bookings
-- `POST /api/bookings/` - Create booking
-- `POST /api/bookings/complete/<id>/` - Complete booking
-- `GET /api/reviews/<tractor_id>/` - Get reviews
-- `POST /api/reviews/add/` - Add review
 
-## Advantages of Pure Dart Backend
+Run the app:
 
-✅ **Single Language**: Entire project in Dart/Flutter  
-✅ **No Python Required**: No Django/Python dependencies  
-✅ **Fast Startup**: Quick server initialization  
-✅ **Type Safe**: Shared types between frontend and backend  
-✅ **Lightweight**: Lower memory footprint  
-✅ **Easy Deployment**: Single codebase to maintain  
+# Web
+flutter run -d chrome
 
-## Database
+# Android / iOS
+flutter run
 
-The SQLite database is automatically created at `data/tractor_mitra.db` when the backend starts.
+🔌 Backend API Endpoints
 
-Uploaded images are stored in `data/media/tractors/`
+GET /api/tractors/ – List available tractors
 
-## Requirements
+POST /api/tractors/add/ – Add a new tractor
 
-- Flutter SDK 3.10.4+
-- Dart SDK 3.10.4+
+GET /api/bookings/ – View bookings
 
-For detailed backend documentation, see [README_BACKEND_DART.md](README_BACKEND_DART.md)
+POST /api/bookings/ – Create booking
+
+POST /api/bookings/complete/<id>/ – Complete booking
+
+GET /api/reviews/<tractor_id>/ – Fetch reviews
+
+POST /api/reviews/add/ – Add review
+
+✅ Why Pure Dart Backend?
+
+Single language (Dart) for frontend & backend
+
+No Python or Django dependency
+
+Fast startup & lightweight
+
+Type-safe data handling
+
+Easy deployment and maintenance
+
+🗄️ Database & Storage
+
+Database: SQLite (auto-created on startup)
+
+Image Storage: Local file system
+
+🧰 Requirements
+
+Flutter SDK 3.10.4+
+
+Dart SDK 3.10.4+
+
+📄 Documentation
+
+For detailed backend documentation, see:
+👉 README_BACKEND_DART.md
+
+🤝 Contribution
+
+Contributions, suggestions, and improvements are welcome.
+Feel free to fork the repository and submit a pull request.
+
+📜 License
+
+This project is licensed under the MIT License.
+
+
+---
+
+### ✅ NEXT STEPS (Recommended)
+- Add **screenshots** section
+- Clean `.gitignore` (remove media & DB)
+- Add **GitHub repo description** (short one)
+- Prepare for **resume / portfolio**
+
+If you want, I can also:
+- Write a **short GitHub description**
+- Add **badges** (Flutter, Dart, License)
+- Review your repo like a recruiter would 🚀
